@@ -1,5 +1,6 @@
 interface Props {
   children: React.ReactNode;
+  style?: React.CSSProperties;
   className?: string;
 }
 
@@ -22,9 +23,10 @@ export const Heading2 = ({ children, className }: Props) => {
   );
 };
 
-export const Paragraph = ({ children, className }: Props) => {
+export const Paragraph = ({ children, className, style }: Props) => {
   return (
     <p
+      style={style}
       className={
         "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal mt-2 text-stone-500 " +
         className
@@ -47,8 +49,9 @@ export const ButtonLG = ({
   if (variant === "primary")
     return (
       <button
+        type="button"
         className={
-          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal mt-6 text-white rounded-md bg-green-600 hover:bg-green-700 transition-colors px-6 py-2 " +
+          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal text-white rounded-md bg-green-600 hover:bg-green-700 transition-colors px-6 py-2 " +
           className
         }
       >
@@ -58,8 +61,9 @@ export const ButtonLG = ({
   else if (variant === "secondary") {
     return (
       <button
+        type="button"
         className={
-          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-medium mt-6 text-stone-500 rounded-md bg-white border-stone-500 border-2 px-6 py-2 " +
+          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-medium text-stone-500 rounded-md bg-white border-stone-500 border-2 px-6 py-2 " +
           className
         }
       >
@@ -69,8 +73,9 @@ export const ButtonLG = ({
   } else {
     return (
       <button
+        type="button"
         className={
-          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal mt-6 text-green-600 rounded-md bg-white px-6 py-2 " +
+          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal text-green-600 rounded-md bg-white px-6 py-2 " +
           className
         }
       >
@@ -88,8 +93,9 @@ export const ButtonMD = ({
   if (variant === "primary")
     return (
       <button
+        type="button"
         className={
-          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal mt-2 text-white rounded-md bg-green-600 hover:bg-green-700 transition-colors px-4 py-1 " +
+          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal text-white rounded-md bg-green-600 hover:bg-green-700 transition-colors px-4 py-1 " +
           className
         }
       >
@@ -99,8 +105,9 @@ export const ButtonMD = ({
   else if (variant === "secondary") {
     return (
       <button
+        type="button"
         className={
-          "2xl:text-xl xl:text-lg lg:text-base text-sm font-medium mt-2 text-stone-500 rounded-md bg-white border-stone-500 border-2 px-4 py-1 " +
+          "2xl:text-xl xl:text-lg lg:text-base text-sm font-medium text-stone-500 rounded-md bg-white border-stone-500 border-2 px-4 py-1 " +
           className
         }
       >
@@ -110,8 +117,9 @@ export const ButtonMD = ({
   } else {
     return (
       <button
+        type="button"
         className={
-          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal mt-2 text-green-600 rounded-md bg-white px-4 py-1 " +
+          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal text-green-600 rounded-md bg-white px-4 py-1 " +
           className
         }
       >
