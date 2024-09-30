@@ -3,16 +3,11 @@ interface Props {
   className?: string;
 }
 
-export const Heading1 = ({ children, className }: Props) => {
-  return (
-    <h1
-      className={
-        "2xl:text-4xl xl:text-3xl lg:text-2xl text-xl font-bold " + className
-      }
-    >
-      {children}
-    </h1>
-  );
+export const Heading1 = ({
+  children,
+  className = "text-xl 2xl:text-4xl xl:text-3xl lg:text-2xl"
+}: Props) => {
+  return <h1 className={"font-bold " + className}>{children}</h1>;
 };
 
 export const Heading2 = ({ children, className }: Props) => {
