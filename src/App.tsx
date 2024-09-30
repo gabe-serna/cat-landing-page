@@ -33,12 +33,12 @@ function App() {
         </section>
         <section
           id="testimonials"
-          className="flex flex-col items-center h-full gap-10 p-4 mt-24 lg:p-16"
+          className="flex flex-col items-center gap-10 p-4 mt-24 h-max lg:h-screen lg:p-16"
         >
           <Heading1 className="z-10 text-5xl text-center lg:text-6xl xl:text-6xl 2xl:text-7xl ">
             Don't Just Take Our Word For It.
           </Heading1>
-          <div className="flex flex-col items-center justify-center gap-20 mt-48 lg:gap-8 lg:mt-20 size-full lg:flex-row max-h-96">
+          <div className="flex flex-col items-center justify-center w-full gap-20 mt-20 h-max lg:gap-8 lg:size-full lg:flex-row lg:max-h-96">
             <figure className="relative border-2 border-stone-400 rounded-md w-full px-8 py-6 h-full max-w-[20rem]">
               <img
                 style={{ boxShadow: "0 0 0 1rem #ffffff" }}
@@ -51,11 +51,12 @@ function App() {
               />
               <div className="flex flex-col justify-between h-full pt-6 lg:pt-16">
                 <p className="z-10 pb-4 text-sm italic font-normal leading-6 text-stone-500 2xl:text-xl xl:text-lg lg:text-base">
-                  "My fur went from meh to marvelous in just a month. Now I’m the
-                  softest, silkiest kitty on the block. My human says it’s like
-                  petting a cloud!"
+                  <span className="text-3xl leading-4 text-amber-500">"</span>My fur
+                  went from meh to marvelous in just a month. Now I’m the softest,
+                  silkiest kitty on the block. My human says it’s like petting a
+                  cloud!<span className="text-3xl leading-4 text-amber-500">"</span>
                 </p>
-                <h1 className="text-base font-bold tracking-wide text-center text-green-600 uppercase 2xl:text-2xl xl:text-xl lg:text-lg">
+                <h1 className="text-base font-bold tracking-wider text-center text-green-600 uppercase 2xl:text-2xl xl:text-xl lg:text-lg">
                   Bubs
                 </h1>
               </div>
@@ -72,11 +73,12 @@ function App() {
               />
               <div className="flex flex-col justify-between h-full pt-6 lg:pt-16">
                 <p className="z-10 pb-4 text-sm italic font-normal leading-6 text-stone-500 2xl:text-xl xl:text-lg lg:text-base">
-                  "Meow Meow I like my fur myow. Very soft. Meow. 10/10. My owner
-                  wuvs my fur and I get pets and pats all day long. Prrr. Mrrrp Mrp
-                  Meow."
+                  <span className="text-3xl leading-4 text-amber-500">"</span>Meow
+                  Meow I like my fur myow. Very soft. Meow. 10/10. My owner wuvs my
+                  fur and I get pets and pats all day long. Prrr. Mrrrp Mrp Meow.
+                  <span className="text-3xl leading-4 text-amber-500">"</span>
                 </p>
-                <h1 className="text-base font-bold tracking-wide text-center text-green-600 uppercase 2xl:text-2xl xl:text-xl lg:text-lg">
+                <h1 className="text-base font-bold tracking-wider text-center text-green-600 uppercase 2xl:text-2xl xl:text-xl lg:text-lg">
                   Misty
                 </h1>
               </div>
@@ -93,11 +95,12 @@ function App() {
               />
               <div className="flex flex-col justify-between h-full pt-6 lg:pt-16">
                 <p className="z-10 pb-4 text-sm italic font-normal leading-6 text-stone-500 2xl:text-xl xl:text-lg lg:text-base">
-                  "I am delighted with the velvety feel that my fur now possesses, I
-                  daresay. It’s smoother than ever, and I get more head scratches
-                  than any of my neighbors"
+                  <span className="text-3xl leading-4 text-amber-500">"</span>I am
+                  delighted with the velvety feel of my fur, I daresay. It’s smoother
+                  than ever, and I get more head scratches than any of my neighbors.
+                  <span className="text-3xl leading-4 text-amber-500">"</span>
                 </p>
-                <h1 className="text-base font-bold tracking-wide text-center text-green-600 uppercase 2xl:text-2xl xl:text-xl lg:text-lg">
+                <h1 className="text-base font-bold tracking-wider text-center text-green-600 uppercase 2xl:text-2xl xl:text-xl lg:text-lg">
                   Mr. Fluffington
                 </h1>
               </div>
@@ -106,7 +109,7 @@ function App() {
         </section>
         <section
           id="benefits"
-          className="mt-24 h-[90vh] p-4 flex flex-col items-center gap-10 lg:p-16"
+          className="mt-12 h-[90vh] p-4 flex flex-col items-center gap-10 lg:p-16"
         >
           <Heading1 className="text-5xl text-center lg:text-6xl xl:text-6xl 2xl:text-7xl ">
             From Furball to <span className="italic text-green-600">Fabulous</span>
